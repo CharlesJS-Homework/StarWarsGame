@@ -88,14 +88,17 @@ let counterStatus;
 let outcomeBox;
 let outcomeText;
 
+const currentSound = new Audio();
 let soundPlaying = false;
 
 function playSound(filename, completion) {
-  soundPlaying = true;
   $('button').attr('disabled', 'disabled');
 
-  const sound = new Audio(`assets/audio/${filename}`);
-  $(sound).on('ended', () => {
+  soundPlaying = true;
+  $(currentSound).attr('src', `assets/audio/${filename}`);
+
+  $(currentSound).on('ended', () => {
+    $(currentSound).off('ended');
     soundPlaying = false;
     $('button').removeAttr('disabled');
 
@@ -104,8 +107,8 @@ function playSound(filename, completion) {
     }
   });
 
-  soundPlaying = true;
-  sound.play();
+  currentSound.load();
+  currentSound.play();
 }
 
 $(document).ready(() => {
