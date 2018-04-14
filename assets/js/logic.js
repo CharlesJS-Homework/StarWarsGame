@@ -148,6 +148,7 @@ function resetGame() {
   readyToAttack = false;
   gameOver = false;
 
+  playersBox.addClass('highlightable');
   $('#play_again').addClass('hidden');
   $(outcomeBox).addClass('hidden');
 
@@ -174,6 +175,7 @@ function choosePlayer(event) {
     return;
   }
 
+  playersBox.removeClass('highlightable');
   yourCharacter = clickedCharacter(event);
   const yourID = yourCharacter.getID();
 
@@ -184,6 +186,8 @@ function choosePlayer(event) {
     characters.filter(e => e.getID() !== yourID).forEach((e) => {
       e.moveTo(enemiesBox);
     });
+
+    enemiesBox.addClass('highlightable');
   });
 }
 
@@ -191,6 +195,8 @@ function chooseEnemy(event) {
   if (soundPlaying || gameOver || readyToAttack) {
     return;
   }
+
+  enemiesBox.removeClass('highlightable');
 
   attackStatus.text('');
   counterStatus.text('');
@@ -228,6 +234,7 @@ function attack() {
         defender.charBox.detach();
         attackStatus.text('');
         readyToAttack = false;
+        enemiesBox.addClass('highlightable');
         updatePlayerListVisibilities();
 
         if (--enemiesLeft === 0) {

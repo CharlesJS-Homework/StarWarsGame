@@ -43,6 +43,10 @@ h2 {
   border-color: red;
 }
 
+.highlightable > .player_list_items > .character:hover {
+  background-color: yellow !important;
+}
+
 .character {
   width: 25%;
   text-align: center;
