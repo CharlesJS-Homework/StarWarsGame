@@ -23,6 +23,10 @@ h2 {
   text-align: right;
 }
 
+#your_player_header {
+  display: none;
+}
+
 #players > .player_list_items > .character, #your_player > .player_list_items > .character {
   background-color: white;
   border-color: #279c00;
@@ -49,9 +53,13 @@ h2 {
   justify-content: space-between;
 }
 
-.char_name {
+.char_name_full, .char_name_mobile {
   font-size: 10pt;
   margin-top: 0;
+}
+
+.char_name_full {
+  display: none;
 }
 
 .char_img {
@@ -99,7 +107,18 @@ h2 {
 @media screen and (min-width: 530px) {
   body {
     background-size: cover;
-/*    background-size: 100%;*/
+  }
+  
+  #your_player_header {
+    display: initial;
+  }
+  
+  .char_name_full {
+    display: initial;
+  }
+  
+  .char_name_mobile {
+    display: none;
   }
   
   .character {

@@ -3,6 +3,7 @@
   [
     {
       "name": "Obi-Wan Kenobi",
+      "mobileName": "Obi-Wan",
       "img": "obiwan.jpg",
       "initialHP": 120,
       "baseAttackPower": 8,
@@ -13,6 +14,7 @@
     },
     {
       "name": "Luke Skywalker",
+      "mobileName": "Luke",
       "img": "luke.jpg",
       "initialHP": 100,
       "baseAttackPower": 10,
@@ -23,6 +25,7 @@
     },
     {
       "name": "Darth Sidious",
+      "mobileName": "Sidious",
       "img": "sidious.jpg",
       "initialHP": 110,
       "baseAttackPower": 6,
@@ -33,6 +36,7 @@
     },
     {
       "name": "Darth Maul",
+      "mobileName": "Maul",
       "img": "maul.jpg",
       "initialHP": 160,
       "baseAttackPower": 3,

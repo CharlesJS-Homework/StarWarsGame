@@ -5,8 +5,11 @@ function Character(data) {
 
   const charBox = $('<div class="character">');
 
-  const name = $('<h3 class="char_name">');
-  name.text(this.name);
+  const fullName = $('<h3 class="char_name_full">');
+  fullName.text(this.name);
+
+  const mobileName = $('<h3 class="char_name_mobile">');
+  mobileName.text(this.mobileName);
 
   const img = $('<img class="char_img">');
   img.attr('src', `assets/img/${this.img}`);
@@ -14,7 +17,7 @@ function Character(data) {
 
   const hp = $('<h6 class="char_hp">');
 
-  charBox.append([name, img, hp]);
+  charBox.append([fullName, mobileName, img, hp]);
 
   this.charBox = charBox;
   this.hpField = hp;
