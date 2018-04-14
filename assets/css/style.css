@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Play:400,700');
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Play", sans-serif;
+  background-image: url('../img/xwing.jpg');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+#top_header {
+  text-align: right;
+}
+
+#players > .player_list_items > .character, #your_player > .player_list_items > .character {
+  background-color: white;
+  border-color: #279c00;
+}
+
+#enemies > .player_list_items > .character {
+  background-color: lightgray;
+  border-color: black;
+}
+
+#defender > .player_list_items > .character {
+  color: white;
+  background-color: black;
+  border-color: red;
+}
+
+.character {
+  width: 25%;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.char_name {
+  font-size: 10pt;
+  margin-top: 0;
+}
+
+.char_img {
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  width: calc(100% - 4px);
+}
+
+.char_hp {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.player_list_items {
+  display: flex;
+}
+
+.dead {
+  transform: rotate(180deg);
+  color: black !important;
+  background-color: red !important;
+  border-color: black !important;
+}
+
+#play_again {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 459px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  body {
+    background-size: cover;
+/*    background-size: 100%;*/
+  }
+  
+  .character {
+    width: 140px;
+  }
+  
+  .char_img {
+    width: 116px;
+  }
+}

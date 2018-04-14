@@ -1,0 +1,45 @@
+{
+  "characters":
+  [
+    {
+      "name": "Obi-Wan Kenobi",
+      "img": "obiwan.jpg",
+      "initialHP": 120,
+      "baseAttackPower": 8,
+      "counterAttackPower": 6,
+      "chooseSound": "obiwan_choose.ogg",
+      "winSound": "obiwan_win.ogg",
+      "dieSound": "obiwan_die.ogg"
+    },
+    {
+      "name": "Luke Skywalker",
+      "img": "luke.jpg",
+      "initialHP": 100,
+      "baseAttackPower": 10,
+      "counterAttackPower": 5,
+      "chooseSound": "luke_choose.m4a",
+      "winSound": "luke_win.ogg",
+      "dieSound": "luke_die.m4a"
+    },
+    {
+      "name": "Darth Sidious",
+      "img": "sidious.jpg",
+      "initialHP": 110,
+      "baseAttackPower": 6,
+      "counterAttackPower": 20,
+      "chooseSound": "sidious_choose.ogg",
+      "winSound": "sidious_win.ogg",
+      "dieSound": "sidious_die.ogg"
+    },
+    {
+      "name": "Darth Maul",
+      "img": "maul.jpg",
+      "initialHP": 160,
+      "baseAttackPower": 3,
+      "counterAttackPower": 25,
+      "chooseSound": "maul_choose.ogg",
+      "winSound": "maul_win.ogg",
+      "dieSound": "maul_die.ogg"
+    }
+  ]
+}
