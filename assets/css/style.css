@@ -67,7 +67,7 @@ h2 {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .player_list_items {
@@ -79,6 +79,10 @@ h2 {
   color: black !important;
   background-color: red !important;
   border-color: black !important;
+}
+
+#outcome {
+  display: inline-block;
 }
 
 #play_again {
